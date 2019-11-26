@@ -7,13 +7,8 @@ public class TextUpdate : MonoBehaviour
 {
     public Text labelText;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    // Updates the text with the value of the slider
     void Update()
     {
         labelText.text = GameObject.Find("SoundFrequency").GetComponent<Slider>().value.ToString() + " Hz";

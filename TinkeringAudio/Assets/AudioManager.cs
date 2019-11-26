@@ -13,12 +13,7 @@ public class AudioManager : MonoBehaviour
         audioSource = gameObject.GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //Takes the value of the slider next to the button clicked in the scene, creates an audio clip and plays it
     public void ButtonClick()
     {
         int frequency = (int)GameObject.Find("SoundFrequency").GetComponent<Slider>().value;
@@ -26,6 +21,7 @@ public class AudioManager : MonoBehaviour
         audioSource.Play();
     }
 
+    //Basic single tone sound clip generation
     private AudioClip CreateSound(int frequency)
     {
         int sampleDurationSecs = 5;
