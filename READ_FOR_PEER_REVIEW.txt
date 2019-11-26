@@ -1,0 +1,1 @@
+Currently the program only generates a single tone. Please be careful with the volume, it may vary based on your earphones or computer settings. Don't blow out your eardrums.
