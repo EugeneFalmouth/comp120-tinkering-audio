@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class TextUpdate : MonoBehaviour
 {
     public Text labelText;
+    public Slider source;
     
 
-    // Updates the text with the value of the slider
+    // Updates the text with the value of the attached slider
     void Update()
     {
-        labelText.text = GameObject.Find("SoundFrequency").GetComponent<Slider>().value.ToString() + " Hz";
+        labelText.text = source.value.ToString() + " Hz";
     }
 }
